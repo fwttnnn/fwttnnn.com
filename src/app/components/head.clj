@@ -2,7 +2,7 @@
 
 (defn -main-component 
   [title description]
-  (let [title (str "youkwhd - " title)]
+  (let [title (str "fwttnnn - " title)]
     [:head
       [:meta {:charset "utf-8"}]
       [:meta {:name "viewport"

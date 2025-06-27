@@ -22,7 +22,7 @@
     [:header
      [:h1
       [:a {:href "/" :class "color-white"}
-         "youkwhd"]]
+         "fwttnnn"]]
      [:nav 
       (for [nav -navigations]
         (seq nav))]]))
