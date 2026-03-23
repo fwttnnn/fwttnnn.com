@@ -8,4 +8,4 @@ Quick Start
 
 Run the command below and everything should be built:
 
-    ./run.sh
+    ./app.sh
