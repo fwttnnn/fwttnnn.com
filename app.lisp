@@ -3,4 +3,6 @@
   (:export #:main))
 
 (defun app:main ()
-  (print "Hello, from Common Lisp!"))
+  (format t "~a~%"
+    (spinneret:with-html-string
+      (:p "Hello, from Common Lisp!"))))
