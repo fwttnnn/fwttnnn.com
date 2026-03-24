@@ -19,6 +19,7 @@
     (:category "Point & Click"
      :links ("https://store.steampowered.com/app/658850/Do_Not_Feed_the_Monkeys/"))
     (:category "Detective"
-     :links ("https://store.steampowered.com/app/1546920/Overboard/"))
+     :links ("https://store.steampowered.com/app/1546920/Overboard/"
+             "https://store.steampowered.com/app/2963890/Expelled/"))
     (:category "Walk"
      :links ("https://store.steampowered.com/app/1152340/Book_of_Travels/"))))
