@@ -10,7 +10,7 @@
          (spinneret:with-html-string
            (:html
             (:head
-             (:title ,title)
+             (:title (concatenate 'string ,title " :: Fattan"))
              (:script :src "https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js")
              (:script :src "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js")))
             (:body ,@body))))))
