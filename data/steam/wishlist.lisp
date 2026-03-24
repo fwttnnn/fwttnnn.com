@@ -15,4 +15,10 @@
      :links ("https://store.steampowered.com/app/718670/Cultist_Simulator/"
              "https://store.steampowered.com/app/1028310/BOOK_OF_HOURS/"))
     (:category "cRPG"
-     :links ("https://store.steampowered.com/app/1432100/The_Bookwalker_Thief_of_Tales/"))))
+     :links ("https://store.steampowered.com/app/1432100/The_Bookwalker_Thief_of_Tales/"))
+    (:category "Point & Click"
+     :links ("https://store.steampowered.com/app/658850/Do_Not_Feed_the_Monkeys/"))
+    (:category "Detective"
+     :links ("https://store.steampowered.com/app/1546920/Overboard/"))
+    (:category "Walk"
+     :links ("https://store.steampowered.com/app/1152340/Book_of_Travels/"))))
