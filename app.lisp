@@ -12,4 +12,5 @@
 
 (defun app:main ()
   (app:spit "build/index.html" #'pages/index:html)
-  (app:spit "build/collection/index.html" #'pages/collection/index:html))
+  (app:spit "build/collection/index.html" #'pages/collection/index:html)
+  (app:spit "build/collection/games/ps2.html" #'pages/collection/games/ps2:html))
