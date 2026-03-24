@@ -5,6 +5,9 @@ BUILD=false
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
+    --serve)
+      serve build/
+      ;;
     --build)
       BUILD=true
       shift
