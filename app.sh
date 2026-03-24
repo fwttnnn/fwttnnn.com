@@ -24,7 +24,9 @@ while [[ $# -gt 0 ]]; do
 done
 
 if $BUILD; then
-  sbcl --non-interactive \
+  sbcl --noinform \
+       --noprint \
+       --non-interactive \
        --eval '((lambda ()
                   (require :asdf)
                   (load "~/quicklisp/setup.lisp")
@@ -39,7 +41,9 @@ if $BUILD; then
   exit
 fi
 
-sbcl --non-interactive \
+sbcl --noinform \
+     --noprint \
+     --non-interactive \
      --eval '((lambda ()
                (require :asdf)
                (load "~/quicklisp/setup.lisp")
