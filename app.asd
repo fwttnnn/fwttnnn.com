@@ -3,5 +3,6 @@
   :serial t
   :components
   ((:file "src/web/html5")
+   (:file "src/web/data/steam/wishlist")
    (:file "src/web/pages/index")
    (:file "app")))
