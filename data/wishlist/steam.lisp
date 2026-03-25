@@ -1,8 +1,8 @@
-(defpackage #:data/steam/wishlist
+(defpackage #:data/wishlist/steam
   (:use #:cl)
   (:export #:+data+))
 
-(defparameter data/steam/wishlist:+data+
+(defparameter data/wishlist/steam:+data+
   '((:category "Mystery & Story"
      :links ("https://store.steampowered.com/app/413410/Danganronpa_Trigger_Happy_Havoc/"
              "https://store.steampowered.com/app/413420/Danganronpa_2_Goodbye_Despair/"
