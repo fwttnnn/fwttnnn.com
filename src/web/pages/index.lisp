@@ -3,8 +3,8 @@
   (:export #:html))
 
 (defun pages/index:html ()
-  (html5:render "Homepage"
-    (:p "Hello, from Common Lisp!")
+  (html5:render
+    (:p "Hi, welcome to my little corner on the internet!")
     (:ul
      (loop for item in data/steam/wishlist:+data+ do
        (:li (getf item :category)

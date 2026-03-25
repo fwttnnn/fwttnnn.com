@@ -2,7 +2,7 @@
   (:use #:cl)
   (:export #:render))
 
-(defmacro html5:render (title &body body)
+(defmacro html5:render (&body body)
   `(progn
      (format t "<!DOCTYPE html>~%")
      (let ((spinneret:*html-style* :tree))
@@ -10,7 +10,7 @@
          (spinneret:with-html-string
            (:html
             (:head
-             (:title (concatenate 'string ,title " :: Fattan"))
+             (:title "fattan")
              (:script :src "https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js")
              (:script :src "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js")))
             (:body ,@body))))))
