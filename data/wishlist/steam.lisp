@@ -18,6 +18,19 @@
      :links ("https://store.steampowered.com/app/1432100/The_Bookwalker_Thief_of_Tales/"))
     (:category "Point & Click"
      :links ("https://store.steampowered.com/app/658850/Do_Not_Feed_the_Monkeys/"))
+    (:category "Simulation (Life)"
+     :links ("https://store.steampowered.com/app/1846700/Witchbrook/"))
+    (:category "Shop Keeping"
+     :links ("https://store.steampowered.com/app/2055770/Bloody_Hell_Hotel/"
+             "https://store.steampowered.com/app/1796790/Chef_RPG/"
+             "https://store.steampowered.com/app/1139980/Travellers_Rest/"
+             "https://store.steampowered.com/app/949290/Winkeltje_The_Little_Shop/"
+             "https://store.steampowered.com/app/1874490/Potionomics/"
+             "https://store.steampowered.com/app/2517200/Repair_this/"
+             "https://store.steampowered.com/app/1298480/Kardboard_Kings_Card_Shop_Simulator/"
+             "https://store.steampowered.com/app/3308550/Sky_End_Market/"
+             "https://store.steampowered.com/app/70400/Recettear_An_Item_Shops_Tale/"
+             "https://store.steampowered.com/app/1705140/Final_Profit_A_Shop_RPG/"))
     (:category "Detective"
      :links ("https://store.steampowered.com/app/1546920/Overboard/"
              "https://store.steampowered.com/app/2963890/Expelled/"))
