@@ -21,11 +21,6 @@ document.querySelectorAll(".--component-media-video").forEach((el) => {
     return
   }
 
-  el.addEventListener("mouseenter", () => {
-    el.play()
-  })
-
-  el.addEventListener("mouseleave", () => {
-    el.pause()
-  })
+  el.addEventListener("mouseenter", () => el.play())
+  el.addEventListener("mouseleave", () => el.pause())
 })
