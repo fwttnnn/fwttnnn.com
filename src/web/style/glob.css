@@ -1,0 +1,22 @@
+*,
+::after,
+::before,
+::backdrop {
+  box-sizing: border-box;
+  border: 0 solid;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+
+  max-width: 385px;
+  margin: 50px 0;
+  padding: 20px 30px;
+
+  a {
+    color: inherit;
+  }
+}
