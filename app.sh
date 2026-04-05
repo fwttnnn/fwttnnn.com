@@ -4,6 +4,11 @@ while [[ $# -gt 0 ]]; do
   case "$1" in
     --serve)
       serve build/
+      exit 0
+      ;;
+    --deploy)
+      vercel --prod
+      exit 0
       ;;
     *)
       echo "Unknown option: $1"
