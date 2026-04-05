@@ -8,7 +8,7 @@
       (:div
         (:div :style "display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.75rem; margin-bottom: 0.75rem; align-items: flex-start;"
           (components/media/image:component "/media/images/profile/me.jpeg"))
-        (components/animated/text/bubble/pastel:component "fattan")
+        (:p (components/animated/text/bubble/pastel:component "fattan"))
         (:p "full stack developer"))
       (:div
         (:div :style "display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.75rem; margin-bottom: 0.75rem; align-items: flex-start;"
