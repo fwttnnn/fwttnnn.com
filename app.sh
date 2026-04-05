@@ -22,5 +22,6 @@ sbcl --noinform \
      --eval '(ql:quickload :app)' \
      --eval '(app:main)'
 
+cp media/ build/ -r
 cp src/web/script/ build/ -r
 cp src/web/style/ build/ -r

@@ -21,6 +21,8 @@
    (:file "src/web/components/animated/text/bubble/pastel")
    (:file "src/web/components/animated/text/bubble/rainbow")
    (:file "src/web/components/animated/text/bubble/red")
+   (:file "src/web/components/media/image")
+   (:file "src/web/components/media/video")
    (:file "src/web/pages/collection/games/ios")
    (:file "src/web/pages/collection/games/ps2")
    (:file "src/web/pages/collection/index")
