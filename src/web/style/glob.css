@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
+
 *,
 ::after,
 ::before,
@@ -9,14 +11,21 @@
 }
 
 body {
+  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+
   background-color: #000000;
   color: #ffffff;
 
   max-width: 385px;
-  margin: 50px 0;
+  margin: 60px 0;
   padding: 20px 30px;
 
   a {
     color: inherit;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
