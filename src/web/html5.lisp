@@ -5,12 +5,18 @@
 (defmacro html5:render (&body body)
   `(progn
      (format t "<!DOCTYPE html>~%")
-     (let ((spinneret:*html-style* :tree))
+     (let ((spinneret:*html-style* :tree)
+           (          *print-pretty* nil))
        (format t "~a~%"
          (spinneret:with-html-string
            (:html
             (:head
              (:title "fattan")
              (:script :src "https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js")
-             (:script :src "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js")))
-            (:body ,@body))))))
+             (:script :src "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js")
+             (:link :rel "stylesheet"
+                    :href "/style/glob.css")))
+            (:body
+              ,@body
+              (:script :type "module"
+                       :src "/script/app.js")))))))
