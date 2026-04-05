@@ -1,8 +1,5 @@
 #!/usr/bin/bash
 
-COMPRESSION=nil
-BUILD=false
-
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --serve)
