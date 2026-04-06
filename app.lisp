@@ -1,6 +1,8 @@
 (defpackage #:app
   (:use #:cl)
-  (:export #:main #:spit))
+  (:export #:spit
+           #:walk
+           #:main))
 
 (defun app:spit (path thunk)
   (ensure-directories-exist path)
@@ -9,11 +11,28 @@
                             :if-does-not-exist :create)
     (let ((*standard-output* out))
       (funcall thunk))))
+  
+(defun app:walk (dir)
+  (append
+    (uiop:directory-files dir)
+    (mapcan #'app:walk
+            (uiop:subdirectories dir))))
 
 (defun app:main ()
-  (app:spit "build/index.html" #'pages/index:html)
-  (app:spit "build/collection/games/ios/index.html" #'pages/collection/games/ios:html)
-  (app:spit "build/collection/games/ps2/index.html" #'pages/collection/games/ps2:html)
-  (app:spit "build/collection/index.html" #'pages/collection/index:html)
-  (app:spit "build/journal/life/love/index.html" #'pages/journal/life/love:html)
-  (app:spit "build/wishlist/steam/index.html" #'pages/wishlist/steam:html))
+  (let* ((base (uiop:ensure-directory-pathname (truename "./src/web/pages/")))
+         (relatives (mapcar (lambda (file)
+                              (let ((rel (enough-namestring file base)))
+                                (subseq rel 0 (- (length rel) 5)))) ;; NOTE: removes ".lisp" (5 chars) at the end
+                            (app:walk base))))
+    (flet ((ends-with? (str suffix)
+             (let ((str-length (length str))
+                   (suffix-length (length suffix)))
+               (and (>= str-length suffix-length)
+                    (string= (subseq str (- str-length suffix-length)) suffix)))))
+      (mapc (lambda (rel)
+              (let ((pkg (find-package (string-upcase (concatenate 'string "pages/" rel))))
+                    (out (if (ends-with? rel "index")
+                             (format nil "build/~a.html" rel)
+                             (format nil "build/~a/index.html" rel))))
+                (app:spit out (symbol-function (find-symbol "HTML" pkg)))))
+            relatives))))
