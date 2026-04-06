@@ -12,10 +12,10 @@
            (:html
             (:head
              (:title "fattan")
-             (:script :src "https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js")
-             (:script :src "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js")
              (:link :rel "stylesheet"
-                    :href "/style/glob.css")))
+                    :href "/style/glob.css")
+             (:script :src "https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js")
+             (:script :src "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js")))
             (:body
               ,@body
               (:script :type "module"
