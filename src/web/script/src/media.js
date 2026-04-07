@@ -7,7 +7,7 @@ const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
 document.querySelectorAll(".--component-media-video").forEach((el) => {
   if (isMobile) {
     /**
-     * NOTE: for reference, see: `src/web/components/image.lisp`
+     * NOTE: for reference, see: `src/web/components/media/image.lisp`
      */
     const img        = document.createElement("img")
           img.src    = el.getAttribute("src")
