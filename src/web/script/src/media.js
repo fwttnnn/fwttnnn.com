@@ -11,8 +11,8 @@ document.querySelectorAll(".--component-media-video").forEach((el) => {
      */
     const img        = document.createElement("img")
           img.src    = el.getAttribute("src")
-                      .replace("/videos/", "/images/")
-                      .replace(/\.\w+$/, ".png")
+                         .replace("/videos/", "/images/")
+                         .replace(/\.\w+$/, ".png")
           img.width  = 101
           img.height = 133.2
           img.style  = "width: 100px; height: 133.2px; object-fit: cover;"
