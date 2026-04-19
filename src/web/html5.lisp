@@ -12,6 +12,9 @@
            (:html
             (:head
              (:title "fattan")
+             (:meta :charset "UTF-8")
+             (:meta :name "viewport"
+                    :content "width=device-width, initial-scale=1.0")
              (:link :rel "stylesheet"
                     :href "/style/glob.css")
              (:script :src "https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js")
