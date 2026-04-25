@@ -12,7 +12,7 @@
     (:ul
       (loop for items in data/games/ps2:+data+ do
         (:li (getf items :genre)
-          (:ul :style "display: flex; gap: 6px; list-style: none; margin: 8px 0px; padding: 0px;"
+          (:ul :style "display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 8px 0px; padding: 0px;"
             (loop for game in (getf items :games) do
               (:li (:img :width  (format nil "~a" (/ 512 4))
                          :height (format nil "~a" (/ 736 4))

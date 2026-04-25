@@ -4,7 +4,7 @@
 
 (defun pages/index:html ()
   (html5:render
-    (:div :style "display: flex; flex-direction: column; gap: 0.5rem;"
+    (:div :style "display: flex; flex-direction: column; gap: 0.5rem; margin-top: 60px;"
       (:div
         (:div :style "display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.75rem; margin-bottom: 0.75rem; align-items: flex-start;"
           (components/media/image:component "/media/images/profile/me.jpeg"))
@@ -53,6 +53,25 @@
           (:a :href "https://github.com/fwttnnn"
               :target "_blank"
               :rel "noreferrer noopener"
-              (components/animated/text/bubble/rainbow:component "github")) "!")))
+              (components/animated/text/bubble/rainbow:component "github")) "!"))
+      (:div
+        (:div :style "display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.75rem; margin-bottom: 0.75rem; align-items: flex-start;"
+          (components/media/image:component "https://i.pinimg.com/736x/e8/d9/ab/e8d9ab86312fb6128476176cde3ef836.jpg")
+          (components/media/image:component "https://i.pinimg.com/1200x/ff/5b/50/ff5b506f6b5979340ea2d71ca8d1c504.jpg")
+          (components/media/image:component "https://i.pinimg.com/1200x/c7/f9/c8/c7f9c8c41ecacbb5e364419e01aeed86.jpg"))
+        (:p :style "text-align: justify; margin-bottom: 12px;"
+            (:small "*some of these images are pulled from pinterest"))
+        (:p "other pages:")
+        (:nav
+          (:ul
+            (:li (:a :style "text-decoration: none;"
+                     :href "/collection"
+                     (components/animated/text/bubble/pastel:component "collection")))
+            (:li (:a :style "text-decoration: none;"
+                     :href "/journal"
+                     (components/animated/text/bubble/pastel:component "journal")))
+            (:li (:a :style "text-decoration: none;"
+                     :href "/wishlist"
+                     (components/animated/text/bubble/pastel:component "wishlist")))))))
     (loop for i from 1 to 9 do
       (:br))))
