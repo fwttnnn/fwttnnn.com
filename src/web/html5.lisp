@@ -17,6 +17,8 @@
                     :content "width=device-width, initial-scale=1.0")
              (:link :rel "stylesheet"
                     :href "/style/glob.css")
+             (:link :rel "stylesheet"
+                    :href "/style/layout/gallery.css")
              (:script :src "https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js")
              (:script :src "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js")))
             (:body

@@ -1,0 +1,19 @@
+.layout--gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 60px;
+
+  & > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    align-items: flex-start;
+  }
+
+  p {
+    margin: 0;
+  }
+}

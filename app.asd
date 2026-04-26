@@ -30,5 +30,6 @@
    (:file "src/web/pages/journal/index")
    (:file "src/web/pages/wishlist/games/steam")
    (:file "src/web/pages/wishlist/index")
+   (:file "src/web/pages/404")
    (:file "src/web/pages/index")
    (:file "app")))
