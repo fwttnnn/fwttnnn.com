@@ -18,6 +18,8 @@
    (:file "data/tcg/yugioh/cards")
    (:file "data/wishlist/games/steam")
    (:file "src/web/html5")
+   (:file "src/web/components/animated/text/bubble/special/makers")
+   (:file "src/web/components/animated/text/bubble/special/telyu")
    (:file "src/web/components/animated/text/bubble/pastel")
    (:file "src/web/components/animated/text/bubble/rainbow")
    (:file "src/web/components/animated/text/bubble/red")

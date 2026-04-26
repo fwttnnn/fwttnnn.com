@@ -23,6 +23,31 @@ animation.text.bubble = (el, color) => {
   gsap.fromTo(el, from, to)
 }
 
+document.querySelectorAll(".--component-text-bubble--special-makers").forEach((el) => {
+  const palette = [
+    "#ED353B",
+    "#5FC3CF",
+    "#FECC2F",
+  ]
+
+  el.addEventListener("mouseenter", () => {
+    animation.text.bubble(el, palette[Math.floor(Math.random() * palette.length)])
+  })
+})
+
+document.querySelectorAll(".--component-text-bubble--special-telyu").forEach((el) => {
+  const palette = [
+    "#ED1F29",
+    "#B5252A",
+    "#959597",
+    "#55565B",
+  ]
+
+  el.addEventListener("mouseenter", () => {
+    animation.text.bubble(el, palette[Math.floor(Math.random() * palette.length)])
+  })
+})
+
 document.querySelectorAll(".--component-text-bubble-pastel").forEach((el) => {
   el.addEventListener("mouseenter", () => {
     animation.text.bubble(el, `hsl(${Math.random() * 360}, 70%, 80%)`)
