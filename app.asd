@@ -2,7 +2,8 @@
   :depends-on ("spinneret")
   :serial t
   :components
-  ((:file "data/cinema/anime")
+  ((:file "data/characters/animated")
+   (:file "data/cinema/anime")
    (:file "data/cinema/movie")
    (:file "data/cinema/series")
    (:file "data/diecast/64/hotwheels")
@@ -25,6 +26,7 @@
    (:file "src/web/components/animated/text/bubble/red")
    (:file "src/web/components/media/image")
    (:file "src/web/components/media/video")
+   (:file "src/web/pages/collection/fiction/characters/animated")
    (:file "src/web/pages/collection/games/ios")
    (:file "src/web/pages/collection/games/ps2")
    (:file "src/web/pages/collection/index")

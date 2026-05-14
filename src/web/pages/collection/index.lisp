@@ -5,6 +5,17 @@
 (defun pages/collection/index:html ()
   (html5:render
     (:ul 
+      (:li "Fiction"
+        (:ul
+          (:li "Cinema"
+            (:ul
+              (:li (:a :href "/collection/cinema/animated" "Animated"))
+              (:li (:a :href "/collection/cinema/movie" "Movie"))
+              (:li (:a :href "/collection/cinema/series" "Series")))))
+        (:ul
+          (:li "Characters"
+            (:ul 
+              (:li (:a :href "/collection/fiction/characters/animated" "Animated"))))))
       (:li "TCG"
         (:ul
           (:li (:a :href "/collection/tcg/pokemon/cards" "Pokémon"))
