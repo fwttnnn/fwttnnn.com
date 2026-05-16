@@ -5,7 +5,8 @@
 (defmacro html5:render (&body body)
   `(progn
      (format t "<!DOCTYPE html>~%")
-     (let ((spinneret:*html-style* :tree)
+     (let ((spinneret:*suppress-inserted-spaces* t)
+           (spinneret:*html-style* :tree)
            (          *print-pretty* nil))
        (format t "~a~%"
          (spinneret:with-html-string
