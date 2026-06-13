@@ -5,6 +5,9 @@
 (defun pages/collection/index:html ()
   (html5:render
     (:ul 
+      (:li "Cars"
+        (:ul
+          (:li (:a :href "/collection/cars/daily" "Daily"))))
       (:li "Fiction"
         (:ul
           (:li "Cinema"
