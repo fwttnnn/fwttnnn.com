@@ -10,6 +10,10 @@ while [[ $# -gt 0 ]]; do
       vercel --prod
       exit 0
       ;;
+    --watch)
+      find src media -type f | entr -r ./app.sh
+      exit 0
+      ;;
     *)
       echo "Unknown option: $1"
       exit 1
