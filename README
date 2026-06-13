@@ -27,6 +27,6 @@ Then, serve the build/ folder:
 
     ./app.sh --serve
 
-Optionally, a quick reload flag is available (unix only):
+Optionally, a quick reload flag is available:
 
     ./app.sh --watch
