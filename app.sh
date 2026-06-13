@@ -11,7 +11,7 @@ while [[ $# -gt 0 ]]; do
       exit 0
       ;;
     --watch)
-      find src media -type f | entr -r ./app.sh
+      find data src media -type f | entr -r ./app.sh
       exit 0
       ;;
     *)
