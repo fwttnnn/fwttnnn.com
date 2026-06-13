@@ -7,24 +7,24 @@
     (:ul 
       (:li "Cars"
         (:ul
-          (:li (:a :href "/collection/cars/daily" "Daily"))))
+          (:li (:a :href "/collection/cars/daily" (components/animated/text/bubble/rainbow:component "Daily")))))
       (:li "Fiction"
         (:ul
           (:li "Cinema"
             (:ul
-              (:li (:a :href "/collection/cinema/animated" "Animated"))
-              (:li (:a :href "/collection/cinema/movie" "Movie"))
-              (:li (:a :href "/collection/cinema/series" "Series")))))
+              (:li (:a :href "/collection/cinema/animated" (components/animated/text/bubble/red:component "Animated")))
+              (:li (:a :href "/collection/cinema/movie" (components/animated/text/bubble/red:component "Movie")))
+              (:li (:a :href "/collection/cinema/series" (components/animated/text/bubble/red:component "Series"))))))
         (:ul
           (:li "Characters"
             (:ul 
-              (:li (:a :href "/collection/fiction/characters/animated" "Animated"))))))
+              (:li (:a :href "/collection/fiction/characters/animated" (components/animated/text/bubble/rainbow:component "Animated")))))))
       (:li "TCG"
         (:ul
-          (:li (:a :href "/collection/tcg/pokemon/cards" "Pokémon"))
-          (:li (:a :href "/collection/tcg/yugioh/cards" "Yu-Gi-Oh!")))
+          (:li (:a :href "/collection/tcg/pokemon/cards" (components/animated/text/bubble/rainbow:component "Pokémon")))
+          (:li (:a :href "/collection/tcg/yugioh/cards" (components/animated/text/bubble/rainbow:component "Yu-Gi-Oh!"))))
       (:li "Games (By Platform)"
         (:ul
-          (:li (:a :href "/collection/games/ios" "iOS"))
-          (:li (:a :href "/collection/games/pc" "PC"))
-          (:li (:a :href "/collection/games/ps2" "PS2"))))))))
+          (:li (:a :href "/collection/games/ios" (components/animated/text/bubble/rainbow:component "iOS")))
+          (:li (:a :href "/collection/games/pc" (components/animated/text/bubble/rainbow:component "PC")))
+          (:li (:a :href "/collection/games/ps2" (components/animated/text/bubble/rainbow:component "PS2")))))))))
