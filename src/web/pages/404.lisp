@@ -12,9 +12,7 @@
     (:p "Please check the URL and try again.")
     (:br)
     (:p "Click the " (:span :style "color: #ff00c3; font-style: italic;" "magic link") " below to get back:"
-      (:ul (:li (:a :href "/"
-                    :onclick "history.length > 1 ? history.back() : window.location.href='/'"
-                    :style "text-decoration: none;"
-                    (components/animated/text/bubble/rainbow:component "Magic")
-                    " "
-                    (components/animated/text/bubble/rainbow:component "Link")))))))
+      (:ul (:li (:span :onclick "document.referrer.startsWith(location.origin) ? history.back() : location.href='/'"
+                       (components/animated/text/bubble/rainbow:component "Magic")
+                       " "
+                       (components/animated/text/bubble/rainbow:component "Link")))))))
