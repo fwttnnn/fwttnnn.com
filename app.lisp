@@ -21,8 +21,8 @@
 (defun app:main ()
   (let* ((base (uiop:ensure-directory-pathname (truename "./src/web/pages/")))
          (relatives (mapcar (lambda (file)
-                              (let ((rel (enough-namestring file base)))
-                                (subseq rel 0 (- (length rel) 5)))) ;; NOTE: removes ".lisp" (5 chars) at the end
+                              (namestring (make-pathname :type nil
+                                                         :defaults (enough-namestring file base))))
                             (app:walk base))))
     (flet ((ends-with? (str suffix)
              (let ((str-length (length str))
