@@ -3,9 +3,30 @@ fwttnnn.com
 
 Personal corner on the internet!
 
+Prerequisite
+------------
+
+You have to setup Common Lisp with the following:
+
+    - sbcl <https://www.sbcl.org/>
+    - quicklisp <https://stylus-lang.com/docs/executable.html>
+
+Install dependencies below:
+
+    - serve <https://www.npmjs.com/package/serve>
+    - entr <https://github.com/eradman/entr> (optional, for --watch)
+
 Quick Start
 -----------
 
 Run the command below and everything should be built:
 
     ./app.sh
+
+Then, serve the build/ folder:
+
+    ./app.sh --serve
+
+Optionally, a quick reload flag is available (unix only):
+
+    ./app.sh --watch
