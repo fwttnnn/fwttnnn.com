@@ -19,7 +19,7 @@
             (uiop:subdirectories dir))))
 
 (defun app:main ()
-  (let* ((base (uiop:ensure-directory-pathname (truename "./src/web/pages/")))
+  (let* ((base (uiop:ensure-directory-pathname (truename "./src/pages/")))
          (relatives (mapcar (lambda (file)
                               (namestring (make-pathname :type nil
                                                          :defaults (enough-namestring file base))))

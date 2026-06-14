@@ -32,5 +32,5 @@ sbcl --noinform \
      --eval '(app:main)'
 
 cp media/ build/ -r
-cp src/web/script/ build/ -r
-cp src/web/style/ build/ -r
+cp src/script/ build/ -r
+cp src/style/ build/ -r
