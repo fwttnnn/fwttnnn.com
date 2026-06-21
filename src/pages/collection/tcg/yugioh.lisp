@@ -8,8 +8,8 @@
     (:ul
       (loop for group in data/tcg/yugioh/cards:+data+ do
         (:li (getf group :archetype)
-          (:ul
+          (:ul :style "display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 8px 0px; padding: 0px;"
             (loop for card in (getf group :cards) do
-              (:li :style "list-style: none;"
+              (:li
                 (:img :width 126
                       :src card)))))))))
