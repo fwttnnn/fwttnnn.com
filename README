@@ -9,7 +9,7 @@ Prerequisite
 You have to setup Common Lisp with the following:
 
     - sbcl <https://www.sbcl.org/>
-    - quicklisp <https://stylus-lang.com/docs/executable.html>
+    - quicklisp <https://www.quicklisp.org/beta/>
 
 Install dependencies below:
 
