@@ -65,7 +65,6 @@
         (:nav
           (:ul
             (:li (:a :href "/collection" (components/animated/text/bubble/pastel:component "collection")))
-            (:li (:a :href "/journal" (components/animated/text/bubble/pastel:component "journal")))
             (:li (:a :href "/wishlist" (components/animated/text/bubble/pastel:component "wishlist")))))))
     (loop for i from 1 to 9 do
       (:br))))
