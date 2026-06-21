@@ -18,7 +18,7 @@
                       :style  (format nil "object-fit: contain; width: ~apx; height: ~apx;" +image-size+ +image-size+)
                       :src    (format nil "https://www.smogon.com/dex/media/sprites/xy/~a.gif" (string-downcase pokemon)))
                 (:br)
-                (:small pokemon)))))))
+                (:small (substitute #\Space #\- pokemon))))))))
     (:p "Trainers")
     (:ul
       (loop for trainer in data/tcg/pokemon/trainers:+data+ do
