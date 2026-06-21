@@ -21,8 +21,8 @@
               (:li (:a :href "/collection/fiction/characters/animated" (components/animated/text/bubble/rainbow:component "Animated")))))))
       (:li "TCG"
         (:ul
-          (:li (:a :href "/collection/tcg/pokemon/cards" (components/animated/text/bubble/rainbow:component "Pokémon")))
-          (:li (:a :href "/collection/tcg/yugioh/cards" (components/animated/text/bubble/rainbow:component "Yu-Gi-Oh!"))))
+          (:li (:a :href "/collection/tcg/pokemon" (components/animated/text/bubble/rainbow:component "Pokémon")))
+          (:li (:a :href "/collection/tcg/yugioh" (components/animated/text/bubble/rainbow:component "Yu-Gi-Oh!"))))
       (:li "Games (By Platform)"
         (:ul
           (:li (:a :href "/collection/games/ios" (components/animated/text/bubble/rainbow:component "iOS")))
