@@ -1,38 +1,6 @@
 (defpackage #:app
   (:use #:cl)
-  (:export #:spit
-           #:walk
-           #:main))
-
-(defun app:spit (path thunk)
-  (ensure-directories-exist path)
-  (with-open-file (out path :direction :output
-                            :if-exists :supersede
-                            :if-does-not-exist :create)
-    (let ((*standard-output* out))
-      (funcall thunk))))
-  
-(defun app:walk (dir)
-  (append
-    (uiop:directory-files dir)
-    (mapcan #'app:walk
-            (uiop:subdirectories dir))))
+  (:export #:main))
 
 (defun app:main ()
-  (let* ((base (uiop:ensure-directory-pathname (truename "./src/pages/")))
-         (relatives (mapcar (lambda (file)
-                              (namestring (make-pathname :type nil
-                                                         :defaults (enough-namestring file base))))
-                            (app:walk base))))
-    (flet ((ends-with? (str suffix)
-             (let ((str-length (length str))
-                   (suffix-length (length suffix)))
-               (and (>= str-length suffix-length)
-                    (string= (subseq str (- str-length suffix-length)) suffix)))))
-      (mapc (lambda (rel)
-              (let ((pkg (find-package (string-upcase (concatenate 'string "pages/" rel))))
-                    (out (cond ((string= rel "404")      (format nil "build/404.html"))
-                               ((ends-with? rel "index") (format nil "build/~a.html" rel))
-                               (t                        (format nil "build/~a/index.html" rel)))))
-                (app:spit out (symbol-function (find-symbol "HTML" pkg)))))
-            relatives))))
+  (sta6:build))

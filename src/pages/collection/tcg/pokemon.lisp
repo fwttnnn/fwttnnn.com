@@ -1,11 +1,11 @@
 (defpackage #:pages/collection/tcg/pokemon
   (:use #:cl)
-  (:export #:html))
+  (:export #:render))
 
 (defconstant +image-size+ 131)
 
-(defun pages/collection/tcg/pokemon:html ()
-  (html5:render
+(defun pages/collection/tcg/pokemon:render ()
+  (layouts/main:html5
     (:p "Pokémons")
     (:ul
       (loop for group in data/tcg/pokemon/pokemons:+data+ do

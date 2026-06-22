@@ -1,9 +1,9 @@
 (defpackage #:pages/collection/fiction/characters/animated
   (:use #:cl)
-  (:export #:html))
+  (:export #:render))
 
-(defun pages/collection/fiction/characters/animated:html ()
-  (html5:render
+(defun pages/collection/fiction/characters/animated:render ()
+  (layouts/main:html5
     (:ul :style "list-style: none;"
       (loop for ch in data/characters/animated:+data+ do
         (:li :style "margin-bottom: 24px;"

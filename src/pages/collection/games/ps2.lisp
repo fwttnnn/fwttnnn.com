@@ -1,9 +1,9 @@
 (defpackage #:pages/collection/games/ps2
   (:use #:cl)
-  (:export #:html))
+  (:export #:render))
 
-(defun pages/collection/games/ps2:html ()
-  (html5:render
+(defun pages/collection/games/ps2:render ()
+  (layouts/main:html5
     (:p "Where can you find PS2 ISOs?")
     (:ul
       (:li (:a :href "https://vimm.net/vault/PS2" "Vimm's Lair"))

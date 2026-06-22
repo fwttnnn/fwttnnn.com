@@ -1,9 +1,9 @@
 (defpackage #:pages/collection/cars/daily
   (:use #:cl)
-  (:export #:html))
+  (:export #:render))
 
-(defun pages/collection/cars/daily:html ()
-  (html5:render
+(defun pages/collection/cars/daily:render ()
+  (layouts/main:html5
     (:p "I <3 underpowered hatchbacks")
     (:ul
       (loop for d in data/cars/daily:+data+ do

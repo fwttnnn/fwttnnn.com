@@ -1,5 +1,5 @@
 (asdf:defsystem "app"
-  :depends-on   ("spinneret")
+  :depends-on   ("sta6")
   :components #.(let ((base (uiop:pathname-directory-pathname *load-pathname*)))
                   (labels ((walk (dir)
                              (append

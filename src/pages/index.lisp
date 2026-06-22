@@ -1,9 +1,9 @@
 (defpackage #:pages/index
   (:use #:cl)
-  (:export #:html))
+  (:export #:render))
 
-(defun pages/index:html ()
-  (html5:render
+(defun pages/index:render ()
+  (layouts/main:html5
     (:div :class "layout--gallery"
       (:div
         (:div

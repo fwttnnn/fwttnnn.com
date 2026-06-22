@@ -1,9 +1,9 @@
 (defpackage #:pages/404
   (:use #:cl)
-  (:export #:html))
+  (:export #:render))
 
-(defun pages/404:html ()
-  (html5:render
+(defun pages/404:render ()
+  (layouts/main:html5
     (:p "Sorry, we couldn't find the page you're looking for.")
     (:p "It's either:")
     (:ol (:li "Renamed")

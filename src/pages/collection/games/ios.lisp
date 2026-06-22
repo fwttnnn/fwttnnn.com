@@ -1,9 +1,9 @@
 (defpackage #:pages/collection/games/ios
   (:use #:cl)
-  (:export #:html))
+  (:export #:render))
 
-(defun pages/collection/games/ios:html ()
-  (html5:render
+(defun pages/collection/games/ios:render ()
+  (layouts/main:html5
     (:p "Best of iOS")
     (:ul
       (loop for items in data/games/ios:+data+ do

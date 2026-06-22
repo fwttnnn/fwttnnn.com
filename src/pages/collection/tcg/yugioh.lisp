@@ -1,9 +1,9 @@
 (defpackage #:pages/collection/tcg/yugioh
   (:use #:cl)
-  (:export #:html))
+  (:export #:render))
 
-(defun pages/collection/tcg/yugioh:html ()
-  (html5:render
+(defun pages/collection/tcg/yugioh:render ()
+  (layouts/main:html5
     (:p "Yu-Gi-Oh! cards")
     (:ul
       (loop for group in data/tcg/yugioh/cards:+data+ do

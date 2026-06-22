@@ -1,9 +1,9 @@
 (defpackage #:pages/wishlist/index
   (:use #:cl)
-  (:export #:html))
+  (:export #:render))
 
-(defun pages/wishlist/index:html ()
-  (html5:render
+(defun pages/wishlist/index:render ()
+  (layouts/main:html5
     (:ul 
       (:li "Games"
         (:ul
