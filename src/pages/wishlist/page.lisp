@@ -1,8 +1,8 @@
-(defpackage #:pages/wishlist/index
+(defpackage #:pages/wishlist/page
   (:use #:cl)
   (:export #:render))
 
-(defun pages/wishlist/index:render ()
+(defun pages/wishlist/page:render ()
   (layouts/main:html5
     (:ul 
       (:li "Games"

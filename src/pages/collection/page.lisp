@@ -1,8 +1,8 @@
-(defpackage #:pages/collection/index
+(defpackage #:pages/collection/page
   (:use #:cl)
   (:export #:render))
 
-(defun pages/collection/index:render ()
+(defun pages/collection/page:render ()
   (layouts/main:html5
     (:ul 
       (:li "Cars"
