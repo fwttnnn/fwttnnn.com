@@ -11,7 +11,9 @@
                 "Latias"
                 "Latias-MEGA"
                 "Latios"
-                "Latios-MEGA"))
+                "Latios-MEGA"
+                "Chingling"
+                "Chingling-MEGA"))
     (:type "Flying"
      :pokemons ("Crobat"))
     (:type "Fairy"
@@ -37,14 +39,17 @@
     (:type "Fire"
      :pokemons ("Centiskorch"
                 "Centiskorch-GMAX"))
+    (:type "Grass"
+     :pokemons ("Torterra"))
     (:type "Water"
-     :pokemons ("Tatsugiri"
-                "Baxcalibur"
+     :pokemons ("Baxcalibur"
                 "Baxcalibur-MEGA"
                 "Feraligatr"
                 "Feraligatr-MEGA"
+                "Empoleon"
                 "Slowbro"
-                "Slowbro-MEGA"))
+                "Slowbro-MEGA"
+                "Suicune"))
     (:type "Ice"
      :pokemons ("Snom"
                 "Snorunt"
@@ -56,11 +61,13 @@
      :pokemons ("Vikavolt"
                 "Rotom"
                 "Rotom-Fan"
-                "Rotom-Mow"))
+                "Rotom-Mow"
+                "Toxtricity"))
     (:type "Dark"
      :pokemons ("Larvitar"
                 "Pupitar"
-                "Tyranitar"))
+                "Tyranitar"
+                "Grimmsnarl"))
     (:type "Poison"
      :pokemons ("Glimmora"
                 "Glimmora-MEGA"))
