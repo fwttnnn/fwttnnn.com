@@ -40,7 +40,9 @@
      :pokemons ("Centiskorch"
                 "Centiskorch-GMAX"))
     (:type "Grass"
-     :pokemons ("Torterra"))
+     :pokemons ("Torterra"
+                "Sceptile"
+                "Sceptile-MEGA"))
     (:type "Water"
      :pokemons ("Baxcalibur"
                 "Baxcalibur-MEGA"
