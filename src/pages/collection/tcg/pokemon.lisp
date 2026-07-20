@@ -10,7 +10,8 @@
     (:ul
       (loop for group in data/tcg/pokemon/pokemons:+data+ do
         (:li (getf group :type)
-          (:ul
+          ;; TODO: not good in mobile
+          (:ul :style "display: grid; grid-template-columns: auto auto; gap: 40px;"
             (loop for pokemon in (getf group :pokemons) do
               (:li :style (format nil "list-style: none; text-align: center; width: ~apx;" +image-size+)
                 (:img :width  +image-size+
