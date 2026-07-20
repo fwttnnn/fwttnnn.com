@@ -3,7 +3,7 @@
   (:export #:component))
 
 (defun components/animated/text/bubble/special/makers:component (text)
-  (spinneret:with-html
+  (sta6:html
     (:span
       (loop for ch across text do
         (:span :style "display: inline-block; cursor: pointer;"

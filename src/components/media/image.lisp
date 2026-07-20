@@ -3,7 +3,7 @@
   (:export #:component))
 
 (defun components/media/image:component (src)
-  (spinneret:with-html
+  (sta6:html
     (:img :src    src
           :width  101
           :height 133.2
