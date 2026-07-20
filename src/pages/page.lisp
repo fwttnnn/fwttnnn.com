@@ -8,8 +8,11 @@
       (:div
         (:div
           (components/media/image:component "/media/images/profile/me.jpeg"))
-        (:p (components/animated/text/bubble/pastel:component "fattan"))
-        (:p "full stack developer"))
+        (:p (:a :href "https://www.linkedin.com/in/fwttnnn/"
+                :target "_blank"
+                :rel "noreferrer noopener"
+                (components/animated/text/bubble/pastel:component "fattan")))
+        (:p "software engineer"))
       (:div
         (:div
           (loop for i in '(1 2 3) do
