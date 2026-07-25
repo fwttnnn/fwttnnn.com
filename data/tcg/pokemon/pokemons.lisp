@@ -64,7 +64,8 @@
                 "Rotom"
                 "Rotom-Fan"
                 "Rotom-Mow"
-                "Toxtricity"))
+                "Toxtricity"
+                "Heliolisk"))
     (:type "Dark"
      :pokemons ("Larvitar"
                 "Pupitar"
