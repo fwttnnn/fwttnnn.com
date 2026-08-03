@@ -15,7 +15,13 @@
                 "Chingling"
                 "Chingling-MEGA"))
     (:type "Flying"
-     :pokemons ("Crobat"))
+     :pokemons ("Noibat"
+                "Noivern"
+                "Woobat"
+                "Swoobat"
+                "Zubat"
+                "Golbat"
+                "Crobat"))
     (:type "Fairy"
      :pokemons ("Xerneas"))
     (:type "Ghost"
