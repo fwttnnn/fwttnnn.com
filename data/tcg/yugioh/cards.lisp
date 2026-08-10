@@ -9,6 +9,13 @@
              "https://s3.duellinksmeta.com/cards/62e034bf5f0fd2a1fe376de1_w360.webp"))
     (:archetype "Tech Genus"
      :cards ("https://s3.duellinksmeta.com/cards/64b00630451b5d913c3accfd_w420.webp"))
+    (:archetype "Vampire"
+     :cards ("https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a53cd5_w420.webp"))
+    (:archetype "Darklord"
+     :cards ("https://s3.duellinksmeta.com/cards/6921ec8d8b006b54e3970284_w420.webp"
+             "https://s3.duellinksmeta.com/cards/68c59b0fe46af851cdfda39d_w420.webp"
+             "https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a51c91_w420.webp"
+             "https://s3.duellinksmeta.com/cards/68c59c25d88930f0ebc0f621_w420.webp"))
     (:archetype "Yang Zing"
      :cards ("https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a51ceb_w420.webp"
              "https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a5194b_w420.webp"))
