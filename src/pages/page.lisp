@@ -24,8 +24,8 @@
         (:div
           (components/media/image:component "/media/images/company/telyu-place.jpg")
           (components/media/image:component "/media/images/company/makers-place.jpeg"))
-        (:p :style "text-align: justify;"
-            "in the past, i've worked with "
+        (:p
+            "over my career, I have worked with "
             (:a :style "display: inline-flex; align-items: center; vertical-align: middle;"
                 :href "https://telkomuniversity.ac.id/"
                 :target "_blank"
@@ -33,7 +33,7 @@
                 (:img :src "/media/images/company/telyu.png"
                       :width 20
                       :height 20))
-            " (" (components/animated/text/bubble/special/telyu:component "telyu") "), and "
+            " " (components/animated/text/bubble/special/telyu:component "telyu") ", & "
             (:a :style "display: inline-flex; align-items: center; vertical-align: middle;"
                 :href "https://makersinstitute.io/home"
                 :target "_blank"
@@ -41,7 +41,7 @@
                 (:img :src "/media/images/company/makers.png"
                       :width 20
                       :height 20))
-            " (" (components/animated/text/bubble/special/makers:component "makers") ")"))
+            " " (components/animated/text/bubble/special/makers:component "makers") ""))
       (:div
         (:div
           (:a :href "https://github.com/fwttnnn/sptfw"
