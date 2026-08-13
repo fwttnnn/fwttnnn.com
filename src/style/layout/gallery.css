@@ -1,4 +1,6 @@
 .layout--gallery {
+  max-width: 340px;
+
   display: flex;
   flex-direction: column;
   gap: 0.5rem;

@@ -40,7 +40,7 @@
                 (:img :src "/media/images/company/makers.png"
                       :width 20
                       :height 20))
-             " (" (components/animated/text/bubble/special/makers:component "makers") ")"))
+            " (" (components/animated/text/bubble/special/makers:component "makers") ")"))
       (:div
         (:div
           (:a :href "https://github.com/fwttnnn/sptfw"
