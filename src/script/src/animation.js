@@ -48,6 +48,18 @@ document.querySelectorAll(".--component-text-bubble--special-telyu").forEach((el
   })
 })
 
+document.querySelectorAll(".--component-text-bubble-blue").forEach((el) => {
+  el.addEventListener("mouseenter", () => {
+    animation.text.bubble(el, `hsl(${175 + Math.random() * 30}, 70%, 55%)`)
+  })
+})
+
+document.querySelectorAll(".--component-text-bubble-red").forEach((el) => {
+  el.addEventListener("mouseenter", () => {
+    animation.text.bubble(el, `hsl(${0 + Math.random() * 30}, 70%, 55%)`)
+  })
+})
+
 document.querySelectorAll(".--component-text-bubble-pastel").forEach((el) => {
   el.addEventListener("mouseenter", () => {
     animation.text.bubble(el, `hsl(${Math.random() * 360}, 70%, 80%)`)
@@ -68,11 +80,3 @@ document.querySelectorAll(".--component-text-bubble-rainbow").forEach((el) => {
     animation.text.bubble(el, rainbow[Math.floor(Math.random() * rainbow.length)])
   })
 })
-
-document.querySelectorAll(".--component-text-bubble-red").forEach((el) => {
-  el.addEventListener("mouseenter", () => {
-    animation.text.bubble(el, `hsl(${Math.random() * 30}, 70%, 55%)`)
-  })
-})
-
-
