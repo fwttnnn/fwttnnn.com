@@ -50,13 +50,13 @@ document.querySelectorAll(".--component-text-bubble--special-telyu").forEach((el
 
 document.querySelectorAll(".--component-text-bubble-blue").forEach((el) => {
   el.addEventListener("mouseenter", () => {
-    animation.text.bubble(el, `hsl(${175 + Math.random() * 30}, 70%, 55%)`)
+    animation.text.bubble(el, `hsl(${175 + Math.random() * 30}, 80%, 55%)`)
   })
 })
 
 document.querySelectorAll(".--component-text-bubble-red").forEach((el) => {
   el.addEventListener("mouseenter", () => {
-    animation.text.bubble(el, `hsl(${0 + Math.random() * 30}, 70%, 55%)`)
+    animation.text.bubble(el, `hsl(${15 + Math.random() * 30}, 90%, 55%)`)
   })
 })
 
