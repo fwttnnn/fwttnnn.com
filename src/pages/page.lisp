@@ -66,7 +66,7 @@
               :target "_blank"
               :rel "noreferrer noopener"
               (components/animated/text/bubble/rainbow:component "github"))
-          ", "
+          ", & "
           (:a :style "display: inline-flex; align-items: center; vertical-align: middle;"
               :href "https://codeberg.org/fwttnnn"
               :target "_blank"
