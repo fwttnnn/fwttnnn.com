@@ -19,19 +19,18 @@
             (components/media/image:component (format nil "/media/images/location/bandung/~a.jpg" i))))
        (:p "bandung, "
            (:a :style "display: inline-flex; align-items: center; vertical-align: middle;"
-                     :href "https://www.cosmos.so/search/elements/views%20from%20indonesia"
-                     :target "_blank"
-                     :rel "noreferrer noopener"
-                     (:img :src "/media/images/indonesia.webp"
-                           :width 20
-                           :height 20))
+               :href "https://www.cosmos.so/search/elements/views%20from%20indonesia"
+               :target "_blank"
+               :rel "noreferrer noopener"
+               (:img :src "/media/images/indonesia.webp"
+                     :width 20
+                     :height 20))
            " "
            (:a :href "https://www.cosmos.so/search/elements/views%20from%20indonesia"
-                   :target "_blank"
-                   :rel "noreferrer noopener"
-                   (components/animated/text/bubble/red:component "indonesia")))
+               :target "_blank"
+               :rel "noreferrer noopener"
+               (components/animated/text/bubble/red:component "indonesia")))
        (:p "available to relocate"))
-       
       (:div
         (:div
           (components/media/image:component "/media/images/company/telyu-place.jpg")
