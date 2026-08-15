@@ -3,14 +3,7 @@
   (:export #:+data+))
 
 (defparameter data/cinema/movie:+data+
-  '((:genre "Comedy"
-     :movies ((:name ""
-               :poster ""
-               :link "")
-              (:name ""
-               :poster ""
-               :link "")))
-    (:genre "Adventure"
-     :movies ((:name ""
-               :poster ""
-               :link "")))))
+  '((:genre "Politics"
+     :movies ((:name "A Taxi Driver"
+               :link "https://en.wikipedia.org/wiki/A_Taxi_Driver"
+               :poster "https://upload.wikimedia.org/wikipedia/en/2/23/A_Taxi_Driver.jpg")))))
