@@ -11,7 +11,7 @@
         (:p 
           (components/animated/link:component
             #'components/animated/text/bubble/pastel:component
-            "https://www.linkedin.com/in/fwttnnn/"
+            "mailto:fattan@fwttnnn.com"
             "fattan"))
         (:p "software engineer"))
       (:div
@@ -75,6 +75,6 @@
         (:nav
           (:ul
             (:li (:a :href "/collection" (components/animated/text/bubble/pastel:component "collection")))
-            (:li (:a :href "/wishlist" (components/animated/text/bubble/pastel:component "wishlist")))))))
+            (:li (:a :href "/social" (components/animated/text/bubble/pastel:component "social")))))))
     (loop for i from 1 to 9 do
       (:br))))
