@@ -16,12 +16,17 @@ body {
   background-color: #000000;
   color: #ffffff;
 
-  max-width: 460px;
+  max-width: 630px;
   margin: 0 auto;
   padding: 20px 30px;
 
   a {
     color: inherit;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 24px;
   }
 
   p {
