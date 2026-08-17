@@ -8,12 +8,20 @@
     (:p "Art:")
     (:ul
       (:li (:a :href "https://www.are.na/fattn-qk/channels"
+               :rel "noopener noreferrer"
+               :target "_blank"
                "Are.na"))
       (:li (:a :href "https://www.cosmos.so/fattn/collections"
+               :rel "noopener noreferrer"
+               :target "_blank"
                "Cosmos"))
       (:li (:a :href "https://id.pinterest.com/fwttnnn/"
+               :rel "noopener noreferrer"
+               :target "_blank"
                "Pinterest")))
     (:p "Work:")
     (:ul
       (:li (:a :href "https://www.linkedin.com/in/fwttnnn/"
+               :rel "noopener noreferrer"
+               :target "_blank"
                "LinkedIn")))))
