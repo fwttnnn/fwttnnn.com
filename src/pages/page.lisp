@@ -4,77 +4,80 @@
 
 (defun pages/page:render ()
   (layouts/main:html5
-    (:div :class "layout--gallery"
-      (:div
+    (loop for i from 1 to 3 do
+      (:br))
+    (:div :style "max-width: 420px; margin: 0 auto;"
+      (:div :class "layout--gallery"
         (:div
-          (components/media/image:component "/media/images/profile/me.jpeg"))
-        (:p 
-          (components/animated/link:component
-            #'components/animated/text/bubble/pastel:component
-            "mailto:fattan@fwttnnn.com"
-            "fattan"))
-        (:p "software engineer"))
-      (:div
-        (:div
-          (loop for i in '(1 2 3) do
-            (components/media/image:component (format nil "/media/images/location/bandung/~a.jpg" i))))
-       (:p "bandung, "
-           (components/animated/link:component
-             #'components/animated/text/bubble/red:component
-             "https://www.cosmos.so/search/elements/views%20from%20indonesia"
-             "indonesia"
-             "/media/images/indonesia.webp"))
-       (:p "available to relocate"))
-      (:div
-        (:div
-          (components/media/image:component "/media/images/company/telyu-place.jpg")
-          (components/media/image:component "/media/images/company/makers-place.jpeg"))
-        (:p "over my career, I have worked with "
+          (:div
+            (components/media/image:component "/media/images/profile/me.jpeg"))
+          (:p 
             (components/animated/link:component
-              #'components/animated/text/bubble/special/telyu:component
-              "https://telkomuniversity.ac.id/"
-              "telyu"
-              "/media/images/company/telyu.png")
+              #'components/animated/text/bubble/pastel:component
+              "mailto:fattan@fwttnnn.com"
+              "fattan"))
+          (:p "software engineer"))
+        (:div
+          (:div
+            (loop for i in '(1 2 3) do
+              (components/media/image:component (format nil "/media/images/location/bandung/~a.jpg" i))))
+         (:p "bandung, "
+             (components/animated/link:component
+               #'components/animated/text/bubble/red:component
+               "https://www.cosmos.so/search/elements/views%20from%20indonesia"
+               "indonesia"
+               "/media/images/indonesia.webp"))
+         (:p "available to relocate"))
+        (:div
+          (:div
+            (components/media/image:component "/media/images/company/telyu-place.jpg")
+            (components/media/image:component "/media/images/company/makers-place.jpeg"))
+          (:p "over my career, I have worked with "
+              (components/animated/link:component
+                #'components/animated/text/bubble/special/telyu:component
+                "https://telkomuniversity.ac.id/"
+                "telyu"
+                "/media/images/company/telyu.png")
+              ", & "
+              (components/animated/link:component
+                #'components/animated/text/bubble/special/makers:component
+                "https://makersinstitute.io/home"
+                "makers"
+                "/media/images/company/makers.png")))
+        (:div
+          (:div
+            (:a :href "https://github.com/fwttnnn/sptfw"
+                :target "_blank"
+                :rel "noreferrer noopener"
+                (components/media/video:component "/media/videos/project/sptfw.webm"))
+            (:a :href "https://kontinu.netlify.app/horse/vanilla"
+                :target "_blank"
+                :rel "noreferrer noopener"
+                (components/media/video:component "/media/videos/project/kontinu.webm")))
+          (:p "projects (personal)")
+          (:p "more on "
+            (components/animated/link:component
+              #'components/animated/text/bubble/rainbow:component
+              "https://github.com/fwttnnn"
+              "github"
+              "/media/images/social/github.png")
             ", & "
             (components/animated/link:component
-              #'components/animated/text/bubble/special/makers:component
-              "https://makersinstitute.io/home"
-              "makers"
-              "/media/images/company/makers.png")))
-      (:div
+              #'components/animated/text/bubble/blue:component
+              "https://codeberg.org/fwttnnn"
+              "codeberg"
+              "/media/images/social/codeberg.png")))
         (:div
-          (:a :href "https://github.com/fwttnnn/sptfw"
-              :target "_blank"
-              :rel "noreferrer noopener"
-              (components/media/video:component "/media/videos/project/sptfw.webm"))
-          (:a :href "https://kontinu.netlify.app/horse/vanilla"
-              :target "_blank"
-              :rel "noreferrer noopener"
-              (components/media/video:component "/media/videos/project/kontinu.webm")))
-        (:p "projects (personal)")
-        (:p "more on "
-          (components/animated/link:component
-            #'components/animated/text/bubble/rainbow:component
-            "https://github.com/fwttnnn"
-            "github"
-            "/media/images/social/github.png")
-          ", & "
-          (components/animated/link:component
-            #'components/animated/text/bubble/blue:component
-            "https://codeberg.org/fwttnnn"
-            "codeberg"
-            "/media/images/social/codeberg.png")))
-      (:div
-        (:div
-          (components/media/image:component "https://i.pinimg.com/736x/e8/d9/ab/e8d9ab86312fb6128476176cde3ef836.jpg")
-          (components/media/image:component "https://i.pinimg.com/1200x/ff/5b/50/ff5b506f6b5979340ea2d71ca8d1c504.jpg")
-          (components/media/image:component "https://i.pinimg.com/1200x/c7/f9/c8/c7f9c8c41ecacbb5e364419e01aeed86.jpg"))
-        (:p :style "text-align: justify; margin-bottom: 12px;"
-            (:small "*some of these images are pulled from pinterest"))
-        (:p "other pages:")
-        (:nav
-          (:ul
-            (:li (:a :href "/collection" (components/animated/text/bubble/pastel:component "collection")))
-            (:li (:a :href "/social" (components/animated/text/bubble/pastel:component "social")))))))
+          (:div
+            (components/media/image:component "https://i.pinimg.com/736x/e8/d9/ab/e8d9ab86312fb6128476176cde3ef836.jpg")
+            (components/media/image:component "https://i.pinimg.com/1200x/ff/5b/50/ff5b506f6b5979340ea2d71ca8d1c504.jpg")
+            (components/media/image:component "https://i.pinimg.com/1200x/c7/f9/c8/c7f9c8c41ecacbb5e364419e01aeed86.jpg"))
+          (:p :style "text-align: justify; margin-bottom: 12px;"
+              (:small "*some of these images are pulled from pinterest"))
+          (:p "other pages:")
+          (:nav
+            (:ul
+              (:li (:a :href "/collection" (components/animated/text/bubble/pastel:component "collection")))
+              (:li (:a :href "/social" (components/animated/text/bubble/pastel:component "social"))))))))
     (loop for i from 1 to 9 do
       (:br))))

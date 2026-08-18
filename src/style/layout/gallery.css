@@ -1,11 +1,9 @@
 .layout--gallery {
   max-width: 340px;
-  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-top: 60px;
 
   & > div > div {
     display: flex;
