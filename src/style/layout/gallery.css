@@ -1,6 +1,6 @@
 .layout--gallery {
   max-width: 340px;
-  margin: 0 82.5px;
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
