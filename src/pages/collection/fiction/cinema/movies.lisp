@@ -1,12 +1,12 @@
-(defpackage #:pages/collection/fiction/cinema/movie
+(defpackage #:pages/collection/fiction/cinema/movies
   (:use #:cl)
   (:export #:render))
 
-(defun pages/collection/fiction/cinema/movie:render ()
+(defun pages/collection/fiction/cinema/movies:render ()
   (layouts/main:html5
     (:h1 "Movies")
     (:ul
-      (loop for d in data/cinema/movie:+data+ do
+      (loop for d in data/cinema/movies:+data+ do
         (let ((genre (getf d :genre))
               (movies (getf d :movies)))
           (:li (getf d :genre))
