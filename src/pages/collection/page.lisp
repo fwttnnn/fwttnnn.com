@@ -10,7 +10,7 @@
     (:ul
       (:li (:a :href "/collection/cars/daily" (components/animated/text/bubble/rainbow:component "Daily")))
       (:li (:a :href "/collection/cars/rallye" (components/animated/text/bubble/rainbow:component "Rallye")))
-      (:li (:a :href "/collection/cars/GT3" (components/animated/text/bubble/rainbow:component "GT3"))))
+      (:li (:a :href "/collection/cars/gt3" (components/animated/text/bubble/rainbow:component "GT3"))))
     (:h2 "Fiction")
     (:ul
       (:li "Cinema"
