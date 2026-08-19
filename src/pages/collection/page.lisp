@@ -19,9 +19,9 @@
     (:ul
       (:li "Cinema"
         (:ul
-          (:li (:a :href "/collection/cinema/animated" (components/animated/text/bubble/red:component "Animated")))
-          (:li (:a :href "/collection/cinema/movie" (components/animated/text/bubble/red:component "Movie")))
-          (:li (:a :href "/collection/cinema/series" (components/animated/text/bubble/red:component "Series"))))
+          (:li (:a :href "/collection/fiction/cinema/animated" (components/animated/text/bubble/red:component "Animated")))
+          (:li (:a :href "/collection/fiction/cinema/movie" (components/animated/text/bubble/red:component "Movie")))
+          (:li (:a :href "/collection/fiction/cinema/series" (components/animated/text/bubble/red:component "Series"))))
         (:li "Characters"
           (:ul 
             (:li (:a :href "/collection/fiction/characters/animated" (components/animated/text/bubble/rainbow:component "Animated")))))))

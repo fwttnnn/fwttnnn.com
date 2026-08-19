@@ -1,8 +1,8 @@
-(defpackage #:data/cinema/anime
+(defpackage #:data/cinema/animated
   (:use #:cl)
   (:export #:+data+))
 
-(defparameter data/cinema/anime:+data+
+(defparameter data/cinema/animated:+data+
   '((:genre "Game Adaptation"
      :animes ((:name "Devil May Cry: The Animated Series"
                :poster "https://upload.wikimedia.org/wikipedia/en/e/e4/Devil_May_Cry_vol_1.jpg"
