@@ -5,7 +5,7 @@
 (defun pages/social:render ()
   (layouts/main:html5
     (:h1 "Social Links")
-    (:p "Art:")
+    (:p :id "art" "Art:")
     (:ul
       (:li (:a :href "https://www.are.na/fattn-qk/channels"
                :rel "noopener noreferrer"
@@ -19,7 +19,7 @@
                :rel "noopener noreferrer"
                :target "_blank"
                "Pinterest")))
-    (:p "Work:")
+    (:p :id "work" "Work:")
     (:ul
       (:li (:a :href "https://www.linkedin.com/in/fwttnnn/"
                :rel "noopener noreferrer"
