@@ -3,7 +3,9 @@
   (:export #:+data+))
 
 (defparameter data/characters/animated:+data+
-  '((:name "Sasuke Uchiha"
+  '((:name "Batman"
+     :portrait "https://i.pinimg.com/736x/46/44/1f/46441f55b774867e39c171a0159babe5.jpg")
+    (:name "Sasuke Uchiha"
      :portrait "https://i.pinimg.com/1200x/0a/ea/06/0aea061aa4404e4a88fa446b27369afc.jpg")
     (:name "L"
      :portrait "https://i.pinimg.com/736x/5b/16/70/5b1670daedafc13e975a4f5b5e0e8325.jpg")
