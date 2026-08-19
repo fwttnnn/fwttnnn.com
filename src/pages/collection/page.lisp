@@ -11,6 +11,10 @@
       (:li (:a :href "/collection/cars/daily" (components/animated/text/bubble/rainbow:component "Daily")))
       (:li (:a :href "/collection/cars/rallye" (components/animated/text/bubble/rainbow:component "Rallye")))
       (:li (:a :href "/collection/cars/gt3" (components/animated/text/bubble/rainbow:component "GT3"))))
+    (:h2 "Music")
+    (:ul
+      (:li (:a :href "/collection/music/artist" (components/animated/text/bubble/rainbow:component "Artist")))
+      (:li (:a :href "/collection/music/single" (components/animated/text/bubble/rainbow:component "Single"))))
     (:h2 "Fiction")
     (:ul
       (:li "Cinema"
