@@ -4,11 +4,11 @@
 
 (defun pages/collection/games/ps2:render ()
   (layouts/main:html5
-    (:p "Where can you find PS2 ISOs?")
+    (:h1 "Where can you find PS2 ISOs?")
     (:ul
       (:li (:a :href "https://vimm.net/vault/PS2" "Vimm's Lair"))
       (:li (:a :href "https://www.emuparadise.me/Sony_Playstation_2_ISOs/List-All-Titles-By-Downloads-1/41" "Emuparadise")))
-    (:p "Best of PS2")
+    (:h1 "Best of PS2")
     (:ul
       (loop for items in data/games/ps2:+data+ do
         (:li (getf items :genre)

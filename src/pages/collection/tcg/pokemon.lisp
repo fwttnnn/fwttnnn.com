@@ -6,12 +6,12 @@
 
 (defun pages/collection/tcg/pokemon:render ()
   (layouts/main:html5
-    (:p "Pokémons")
+    (:h1 "Pokémons")
+    (:p "Grouped by their type:")
     (:ul
       (loop for group in data/tcg/pokemon/pokemons:+data+ do
         (:li (getf group :type)
-          ;; TODO: not good in mobile
-          (:ul :style "display: grid; grid-template-columns: auto auto; gap: 40px;"
+          (:ul :style "display: grid; grid-template-columns: max-content max-content; gap: 40px; padding: 0;"
             (loop for pokemon in (getf group :pokemons) do
               (:li :style (format nil "list-style: none; text-align: center; width: ~apx;" +image-size+)
                 (:img :width  +image-size+
@@ -20,7 +20,9 @@
                       :src    (format nil "https://www.smogon.com/dex/media/sprites/xy/~a.gif" (string-downcase pokemon)))
                 (:br)
                 (:small (substitute #\Space #\- pokemon))))))))
-    (:p "Trainers")
+    (:br)
+    (:h1 "Trainers")
+    (:p "Purely based on aesthetics:")
     (:ul
       (loop for trainer in data/tcg/pokemon/trainers:+data+ do
         (:li (getf trainer :name)

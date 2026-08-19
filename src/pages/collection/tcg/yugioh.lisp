@@ -4,7 +4,8 @@
 
 (defun pages/collection/tcg/yugioh:render ()
   (layouts/main:html5
-    (:p "Yu-Gi-Oh! cards")
+    (:h1 "Yu-Gi-Oh! cards")
+    (:p "I mostly like the artwork, not merely their power level:")
     (:ul
       (loop for group in data/tcg/yugioh/cards:+data+ do
         (:li (getf group :archetype)

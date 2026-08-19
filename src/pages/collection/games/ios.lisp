@@ -4,7 +4,7 @@
 
 (defun pages/collection/games/ios:render ()
   (layouts/main:html5
-    (:p "Best of iOS")
+    (:h1 "Best of iOS")
     (:ul
       (loop for items in data/games/ios:+data+ do
         (:li (getf items :category)
