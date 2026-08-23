@@ -19,7 +19,9 @@
               :link "https://www.thinkwithportals.com")))
     (:genre "Sandbox"
      :games ((:name "Minecraft"
-              :link "https://www.minecraft.net")))
+              :link "https://www.minecraft.net")
+             (:name "Project Zomboid"
+              :link "https://projectzomboid.com/")))
     (:genre "Tower Defense"
      :games ((:name "Plants vs. Zombie"
               :link "https://web.archive.org/web/20090801140825/http://www.popcap.com/games/pvz")))))
