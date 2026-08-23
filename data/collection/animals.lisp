@@ -1,8 +1,8 @@
-(defpackage #:data/animals
+(defpackage #:data/collection/animals
   (:use #:cl)
   (:export #:+data+))
 
-(defparameter data/animals:+data+
+(defparameter data/collection/animals:+data+
   '((:name "Crow"
      :images '("https://i.pinimg.com/736x/6d/04/a8/6d04a82c85bee54c5d6fda3d19e9d0e2.jpg"
                "https://i.pinimg.com/736x/f8/0c/32/f80c323d56643e4a25f8585eac864e4d.jpg"

@@ -1,8 +1,8 @@
-(defpackage #:data/games/ios
+(defpackage #:data/collection/games/ios
   (:use #:cl)
   (:export #:+data+))
 
-(defparameter data/games/ios:+data+
+(defparameter data/collection/games/ios:+data+
   '((:category "RNG (Gambling)"
      :games ((:name "LINE! Magic Coin"
               :cover "https://play-lh.googleusercontent.com/Rm5GPefVyoakcMQoHn1UKRHpfnT5iaAGKOc6uIQMSbVlbWcl9ncdgAcu0xhn9vWstfU=s64")))

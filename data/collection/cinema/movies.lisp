@@ -1,8 +1,8 @@
-(defpackage #:data/cinema/movies
+(defpackage #:data/collection/cinema/movies
   (:use #:cl)
   (:export #:+data+))
 
-(defparameter data/cinema/movies:+data+
+(defparameter data/collection/cinema/movies:+data+
   '((:genre "Politics"
      :movies ((:name "A Taxi Driver"
                :link "https://en.wikipedia.org/wiki/A_Taxi_Driver"

@@ -1,8 +1,8 @@
-(defpackage #:data/music/artist
+(defpackage #:data/collection/music/artist
   (:use #:cl)
   (:export #:+data+))
 
-(defparameter data/music/artist:+data+
+(defparameter data/collection/music/artist:+data+
   '((:name "Angèle"
      :link (:spotify "https://open.spotify.com/playlist/05ziwAZalRzoW7pNxWtE4F"
             :profile "https://lastfm-img.freetls.fastly.net/i/u/300x300/ee4945618c7189823f6663712369f31d.jpg"))

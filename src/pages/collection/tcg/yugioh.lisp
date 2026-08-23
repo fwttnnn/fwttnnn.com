@@ -7,7 +7,7 @@
     (:h1 "Yu-Gi-Oh! cards")
     (:p "I mostly like the artwork, not merely their power level:")
     (:ul
-      (loop for group in data/tcg/yugioh/cards:+data+ do
+      (loop for group in data/collection/tcg/yugioh/cards:+data+ do
         (:li (getf group :archetype)
           (:ul :style "display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 8px 0px; padding: 0px;"
             (loop for card in (getf group :cards) do

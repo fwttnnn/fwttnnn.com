@@ -1,8 +1,8 @@
-(defpackage #:data/tcg/yugioh/cards
+(defpackage #:data/collection/tcg/yugioh/cards
   (:use #:cl)
   (:export #:+data+))
 
-(defparameter data/tcg/yugioh/cards:+data+
+(defparameter data/collection/tcg/yugioh/cards:+data+
   '((:archetype "Tearlaments"
      :cards ("https://s3.duellinksmeta.com/cards/6265e6c83ecc89b0e4f30422_w360.webp"
              "https://s3.duellinksmeta.com/cards/6265e6c83ecc89b0e4f30426_w360.webp"

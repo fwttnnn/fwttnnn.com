@@ -1,8 +1,8 @@
-(defpackage #:data/games/pc
+(defpackage #:data/collection/games/pc
   (:use #:cl)
   (:export #:+data+))
 
-(defparameter data/games/pc:+data+
+(defparameter data/collection/games/pc:+data+
   '((:genre "Incremental"
      :games ((:name "A Dark Room"
               :link "https://adarkroom.doublespeakgames.com/"

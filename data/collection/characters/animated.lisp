@@ -1,8 +1,8 @@
-(defpackage #:data/characters/animated
+(defpackage #:data/collection/characters/animated
   (:use #:cl)
   (:export #:+data+))
 
-(defparameter data/characters/animated:+data+
+(defparameter data/collection/characters/animated:+data+
   '((:name "Batman"
      :portrait "https://i.pinimg.com/736x/46/44/1f/46441f55b774867e39c171a0159babe5.jpg")
     (:name "Sasuke Uchiha"

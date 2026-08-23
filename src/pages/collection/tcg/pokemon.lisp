@@ -9,7 +9,7 @@
     (:h1 "Pokémons")
     (:p "Grouped by their type:")
     (:ul
-      (loop for group in data/tcg/pokemon/pokemons:+data+ do
+      (loop for group in data/collection/tcg/pokemon/pokemons:+data+ do
         (:li (getf group :type)
           (:ul :style "display: grid; grid-template-columns: max-content max-content; gap: 40px; padding: 0;"
             (loop for pokemon in (getf group :pokemons) do
@@ -24,7 +24,7 @@
     (:h1 "Trainers")
     (:p "Purely based on aesthetics:")
     (:ul
-      (loop for trainer in data/tcg/pokemon/trainers:+data+ do
+      (loop for trainer in data/collection/tcg/pokemon/trainers:+data+ do
         (:li (getf trainer :name)
           (:ul
             (loop for sprite in (getf trainer :sprites) do

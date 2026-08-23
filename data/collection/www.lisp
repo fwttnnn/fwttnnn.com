@@ -1,8 +1,8 @@
-(defpackage #:data/www
+(defpackage #:data/collection/www
   (:use #:cl)
   (:export #:+data+))
 
-(defparameter data/www:+data+
+(defparameter data/collection/www:+data+
   ;; TODO: group these
   '((:name "Music for Programming"
      :link "https://musicforprogramming.net/latest/")

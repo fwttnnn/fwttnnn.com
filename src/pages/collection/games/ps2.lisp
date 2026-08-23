@@ -10,7 +10,7 @@
       (:li (:a :href "https://www.emuparadise.me/Sony_Playstation_2_ISOs/List-All-Titles-By-Downloads-1/41" "Emuparadise")))
     (:h1 "Best of PS2")
     (:ul
-      (loop for items in data/games/ps2:+data+ do
+      (loop for items in data/collection/games/ps2:+data+ do
         (:li (getf items :genre)
           (:ul :style "display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 8px 0px; padding: 0px;"
             (loop for game in (getf items :games) do

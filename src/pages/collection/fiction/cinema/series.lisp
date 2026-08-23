@@ -6,7 +6,7 @@
   (layouts/main:html5
     (:h1 "Series")
     (:ul
-      (loop for d in data/cinema/series:+data+ do
+      (loop for d in data/collection/cinema/series:+data+ do
         (let ((genre (getf d :genre))
               (series (getf d :series)))
           (:li (getf d :genre))

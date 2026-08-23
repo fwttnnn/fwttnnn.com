@@ -5,7 +5,7 @@
 (defun pages/collection/fiction/characters/animated:render ()
   (layouts/main:html5
     (:ul :style "list-style: none;"
-      (loop for ch in data/characters/animated:+data+ do
+      (loop for ch in data/collection/characters/animated:+data+ do
         (:li :style "margin-bottom: 24px;"
           (:img :height "128"
                 :width  "128"

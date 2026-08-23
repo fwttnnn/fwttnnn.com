@@ -1,8 +1,8 @@
-(defpackage #:data/cinema/series
+(defpackage #:data/collection/cinema/series
   (:use #:cl)
   (:export #:+data+))
 
-(defparameter data/cinema/series:+data+
+(defparameter data/collection/cinema/series:+data+
   '((:genre "Law"
      :series ((:name "Better Call Saul"
                :link "https://en.wikipedia.org/wiki/Better_Call_Saul"

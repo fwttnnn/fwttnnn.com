@@ -1,8 +1,8 @@
-(defpackage #:data/tcg/pokemon/pokemons
+(defpackage #:data/collection/tcg/pokemon/pokemons
   (:use #:cl)
   (:export #:+data+))
 
-(defparameter data/tcg/pokemon/pokemons:+data+
+(defparameter data/collection/tcg/pokemon/pokemons:+data+
   '((:type "Psychic"
      :pokemons ("Reuniclus"
                 "Sableye"

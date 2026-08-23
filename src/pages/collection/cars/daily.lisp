@@ -6,7 +6,7 @@
   (layouts/main:html5
     (:h1 "Daily drive cars")
     (:p "I <3 underpowered hatchbacks, they don't slurp as much fuel.")
-    (loop for d in data/cars/daily:+data+ do
+    (loop for d in data/collection/cars/daily:+data+ do
       (:h2 (getf d :manufacturer)
         (:ul
           (loop for car in (getf d :cars) do

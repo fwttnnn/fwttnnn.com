@@ -1,8 +1,8 @@
-(defpackage #:data/games/ps2
+(defpackage #:data/collection/games/ps2
   (:use #:cl)
   (:export #:+data+))
 
-(defparameter data/games/ps2:+data+
+(defparameter data/collection/games/ps2:+data+
   '((:genre "Racing"
      :games ((:name "Gran Turismo 3"
               :serial "PBPX-95503")

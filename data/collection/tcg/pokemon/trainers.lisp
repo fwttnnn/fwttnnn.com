@@ -1,8 +1,8 @@
-(defpackage #:data/tcg/pokemon/trainers
+(defpackage #:data/collection/tcg/pokemon/trainers
   (:use #:cl)
   (:export #:+data+))
 
-(defparameter data/tcg/pokemon/trainers:+data+
+(defparameter data/collection/tcg/pokemon/trainers:+data+
   '((:name "Sabrina"
      :sprites ("https://archives.bulbagarden.net/media/upload/d/dc/Spr_HGSS_Sabrina.png"
                "https://archives.bulbagarden.net/media/upload/2/26/Spr_B2W2_Sabrina.png"

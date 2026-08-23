@@ -6,7 +6,7 @@
   (layouts/main:html5
     (:h1 "Artist")
     (:ul
-      (loop for artist in data/music/artist:+data+ do
+      (loop for artist in data/collection/music/artist:+data+ do
         (let ((name (getf artist :name))
               (link (getf artist :link)))
           (:li (getf artist :name)
