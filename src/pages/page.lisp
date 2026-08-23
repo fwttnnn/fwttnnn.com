@@ -78,6 +78,7 @@
           (:nav
             (:ul
               (:li (:a :href "/collection" (components/animated/text/bubble/pastel:component "collection")))
+              (:li (:a :href "/recipe" (components/animated/text/bubble/pastel:component "recipe")))
               (:li (:a :href "/social" (components/animated/text/bubble/pastel:component "social"))))))))
     (loop for i from 1 to 9 do
       (:br))))
