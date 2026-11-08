@@ -7,6 +7,10 @@
      :animes ((:name "Devil May Cry: The Animated Series"
                :poster "https://upload.wikimedia.org/wikipedia/en/e/e4/Devil_May_Cry_vol_1.jpg"
                :link "http://dmc-tv.com")))
+    (:genre "Action"
+     :animes ((:name "Tokyo Ghoul"
+               :poster "https://upload.wikimedia.org/wikipedia/en/e/e5/Tokyo_Ghoul_volume_1_cover.jpg"
+               :link "https://www.viz.com/tokyo-ghoul")))
     (:genre "Adventure"
      :animes ((:name "Naruto"
                :poster "https://static0.srcdn.com/wordpress/wp-content/uploads/2024/03/naruto-tv-show-poster.jpeg?q=49&fit=contain&w=480&dpr=2"
@@ -16,4 +20,9 @@
                :link "https://miabyss.com/")
               (:name "Blue Exorcist"
                :poster "https://upload.wikimedia.org/wikipedia/en/6/62/Blue_Exorcist_vol_1.png"
-               :link "http://ao-ex.com/")))))
+               :link "http://ao-ex.com/")))
+    (:genre "Comedy"
+     :animes ((:name "Mob Psycho 100"
+               :poster "https://i.pinimg.com/736x/24/d0/4c/24d04c83d7949c8d85b36ae5ee6e3bad.jpg"
+               :link "https://mobpsycho100.com/")))))
+              
