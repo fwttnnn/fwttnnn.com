@@ -5,7 +5,7 @@
 (defparameter data/collection/cinema/animated:+data+
   '((:genre "Game Adaptation"
      :animes ((:name "Devil May Cry: The Animated Series"
-               :poster "https://upload.wikimedia.org/wikipedia/en/e/e4/Devil_May_Cry_vol_1.jpg"
+               :poster "https://i.pinimg.com/736x/8d/ba/6b/8dba6b1a44fcccde5fbc1005efc30e59.jpg"
                :link "http://dmc-tv.com")))
     (:genre "Action"
      :animes ((:name "Tokyo Ghoul"
