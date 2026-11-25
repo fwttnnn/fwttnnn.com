@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/collection/page:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Matters of interest to me."
     (:h1 "Collection")
     (:p "Matters of interest to me, you can find more collection (of pictures) from my " (:a :href "/social#art" "social") " (on the art section).")
     (:h2 "Cars")

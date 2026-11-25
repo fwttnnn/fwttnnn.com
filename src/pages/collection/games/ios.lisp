@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/collection/games/ios:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Collection of iOS games."
     (:h1 "Best of iOS")
     (:ul
       (loop for items in data/collection/games/ios:+data+ do

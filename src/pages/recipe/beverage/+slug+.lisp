@@ -8,7 +8,7 @@
           data/recipe/beverage:+data+))
 
 (defun pages/recipe/beverage/+slug+:render (slug)
-  (layouts/main:html5
+  (layouts/main:html5 (format nil "Recipe for ~a." slug)
     (let ((recipe (find slug
                         data/recipe/beverage:+data+
                         :key (lambda (r) (helpers/path:slugify (getf r :name)))

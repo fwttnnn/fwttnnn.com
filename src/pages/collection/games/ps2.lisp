@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/collection/games/ps2:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Collection of PS2 games."
     (:h1 "Where can you find PS2 ISOs?")
     (:ul
       (:li (:a :href "https://vimm.net/vault/PS2" "Vimm's Lair"))

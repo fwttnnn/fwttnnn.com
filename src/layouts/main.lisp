@@ -2,13 +2,15 @@
   (:use #:cl)
   (:export #:html5))
 
-(defmacro layouts/main:html5 (&body body)
+(defmacro layouts/main:html5 (desc &body body)
   `(sta6:html5
      (:head
        (:title "fattan")
        (:meta :charset "UTF-8")
        (:meta :name "viewport"
               :content "width=device-width, initial-scale=1.0")
+       (:meta :name "description"
+              :content ,desc)
        (:link :rel "stylesheet"
               :href "/style/glob.css")
        (:link :rel "stylesheet"

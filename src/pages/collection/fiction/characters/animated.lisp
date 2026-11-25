@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/collection/fiction/characters/animated:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Collection of animated characters."
     (:ul :style "list-style: none;"
       (loop for ch in data/collection/characters/animated:+data+ do
         (:li :style "margin-bottom: 24px;"

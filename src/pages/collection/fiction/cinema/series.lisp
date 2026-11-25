@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/collection/fiction/cinema/series:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Collection of (series by genre) in cinema."
     (:h1 "Series")
     (:ul
       (loop for d in data/collection/cinema/series:+data+ do

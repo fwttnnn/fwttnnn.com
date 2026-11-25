@@ -5,7 +5,7 @@
 (defconstant +image-size+ 131)
 
 (defun pages/collection/tcg/pokemon:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Collection of pokémons."
     (:h1 "Pokémons")
     (:p "Grouped by their type:")
     (:ul

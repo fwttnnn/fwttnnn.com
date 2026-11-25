@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/collection/cars/daily:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Cars (to be) daily driven."
     (:h1 "Daily drive cars")
     (:p "I <3 underpowered hatchbacks, they don't slurp as much fuel.")
     (loop for d in data/collection/cars/daily:+data+ do

@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/collection/music/artist:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Collection of music (by artist)."
     (:h1 "Artist")
     (:ul
       (loop for artist in data/collection/music/artist:+data+ do

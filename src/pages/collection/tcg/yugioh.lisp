@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/collection/tcg/yugioh:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Collection of Yu-Gi-Oh! cards."
     (:h1 "Yu-Gi-Oh! cards")
     (:p "I mostly like the artwork, not merely their power level:")
     (:ul

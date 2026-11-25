@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/social:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Tree of social link(s)."
     (:h1 "Social Links")
     (:p :id "art" "Art:")
     (:ul

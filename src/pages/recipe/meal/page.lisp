@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/recipe/meal/page:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Meal recipes."
     (:h1 "Meal")
     (:ul
       (loop for meal in data/recipe/meal:+data+ do

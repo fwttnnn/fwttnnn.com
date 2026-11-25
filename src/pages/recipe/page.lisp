@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/recipe/page:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Collection of recipes."
     (:h1 "Recipes")
     (:ul
       (loop for dir in (uiop:subdirectories "src/pages/recipe/") do

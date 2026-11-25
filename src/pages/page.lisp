@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/page:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "fattan: a brief description."
     (loop for i from 1 to 3 do
       (:br))
     (:div :style "max-width: 420px; margin: 0 auto;"

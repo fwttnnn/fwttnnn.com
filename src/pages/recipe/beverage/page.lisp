@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/recipe/beverage/page:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Beverage recipes."
     (:h1 "Beverage")
     (:ul
       (loop for beverage in data/recipe/beverage:+data+ do

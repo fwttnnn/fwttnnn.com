@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/collection/games/roblox:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Collection of Roblox games."
     (:h1 "Roblox (Engine)")
     (:ul
       (loop for items in data/collection/games/roblox:+data+ do

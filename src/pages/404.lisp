@@ -3,7 +3,7 @@
   (:export #:render))
 
 (defun pages/404:render ()
-  (layouts/main:html5
+  (layouts/main:html5 "Are ya lost son?"
     (:p "Sorry, we couldn't find the page you're looking for.")
     (:p "It's either:")
     (:ol (:li "Renamed")
