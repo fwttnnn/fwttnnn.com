@@ -18,5 +18,6 @@
                       :rel "noopener noreferrer"
                       :target "_blank"
                        (:img :src (getf movie :poster)
-                             :width "110px"
+                             :alt ""
+                             :width  "110px"
                              :height "163px"))))))))))
