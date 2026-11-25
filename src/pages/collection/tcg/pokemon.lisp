@@ -17,7 +17,8 @@
                 (:img :width  +image-size+
                       :height +image-size+
                       :style  (format nil "object-fit: contain; width: ~apx; height: ~apx;" +image-size+ +image-size+)
-                      :src    (format nil "https://www.smogon.com/dex/media/sprites/xy/~a.gif" (string-downcase pokemon)))
+                      :src    (format nil "https://www.smogon.com/dex/media/sprites/xy/~a.gif" (string-downcase pokemon))
+                      :alt    "")
                 (:br)
                 (:small (substitute #\Space #\- pokemon))))))))
     (:br)
@@ -32,4 +33,5 @@
                 (:img :width  +image-size+
                       :height +image-size+
                       :style  (format nil "object-fit: contain; width: ~apx; height: ~apx;" +image-size+ +image-size+)
-                      :src    sprite)))))))))
+                      :src    sprite
+                      :alt    "")))))))))

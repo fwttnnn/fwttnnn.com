@@ -17,4 +17,5 @@
                            :target "_blank"
                          (:img :width  (format nil "~a" 140)
                                :height (format nil "~a" 140)
-                               :src    snapshot))))))))))))
+                               :src    snapshot
+                               :alt    ""))))))))))))

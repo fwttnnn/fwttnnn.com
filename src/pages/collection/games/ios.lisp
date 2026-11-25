@@ -12,4 +12,5 @@
             (loop for game in (getf items :games) do
               (:li (:img :height "64"
                          :width  "64"
-                         :src (getf game :cover))))))))))
+                         :src    (getf game :cover)
+                         :alt    "")))))))))

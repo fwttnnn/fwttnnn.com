@@ -17,4 +17,5 @@
               (:li (:img :width  (format nil "~a" (/ 512 4))
                          :height (format nil "~a" (/ 736 4))
                          :src    (format nil "https://raw.githubusercontent.com/xlenore/ps2-covers/refs/heads/main/covers/default/~a.jpg"
-                                             (getf game :serial)))))))))))
+                                             (getf game :serial))
+                         :alt    "")))))))))

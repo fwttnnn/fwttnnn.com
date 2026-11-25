@@ -15,5 +15,6 @@
                    :rel "noopener noreferrer"
                    :target "_blank"
                    (:img :src (getf link :profile)
+                         :alt ""
                          :width "80px"
                          :height "80px")))))))) 

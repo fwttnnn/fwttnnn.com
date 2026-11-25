@@ -10,6 +10,7 @@
           :target "_blank"
           :rel "noreferrer noopener"
           (:img :src icon
+                :alt ""
                 :width 20
                 :height 20))
       (:raw "&nbsp;"))

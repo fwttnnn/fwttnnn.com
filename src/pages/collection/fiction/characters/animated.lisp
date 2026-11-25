@@ -10,5 +10,6 @@
           (:img :height "128"
                 :width  "128"
                 :style  "object-fit: cover;"
-                :src (getf ch :portrait))
+                :src    (getf ch :portrait)
+                :alt    "")
           (:p :style "margin: 0;" (getf ch :name)))))))

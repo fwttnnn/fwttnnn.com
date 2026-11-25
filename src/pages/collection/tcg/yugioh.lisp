@@ -13,4 +13,5 @@
             (loop for card in (getf group :cards) do
               (:li
                 (:img :width 126
-                      :src card)))))))))
+                      :src card
+                      :lt "")))))))))

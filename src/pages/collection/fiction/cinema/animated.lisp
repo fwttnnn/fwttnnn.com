@@ -17,6 +17,7 @@
                   (:a :href (getf anime :link)
                       :rel "noopener noreferrer"
                       :target "_blank"
-                       (:img :src (getf anime :poster)
-                             :width "110px"
+                       (:img :src    (getf anime :poster)
+                             :alt    ""
+                             :width  "110px"
                              :height "163px"))))))))))

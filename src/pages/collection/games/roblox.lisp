@@ -11,6 +11,10 @@
           (:ul :style ""
             (loop for game in (getf items :games) do
               (:li (:p (getf game :name))
-                   (:img :src (getf game :cover)
-                         :width 100
-                         :height 100)))))))))
+                   (:a :href (getf game :link)
+                       :rel "noopener noreferrer"
+                       :target "_blank"
+                     (:img :src (getf game :cover)
+                           :alt ""
+                           :width 100
+                           :height 100))))))))))

@@ -5,6 +5,7 @@
 (defun components/media/image:component (src)
   (sta6:html
     (:img :src    src
+          :alt    ""
           :width  101
           :height 133.2
           :style  "width: 100px; height: 133.2px; object-fit: cover;")))
