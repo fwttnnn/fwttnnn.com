@@ -15,6 +15,7 @@
               :href "/style/layout/gallery.css")
        (:script :src "https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js")
        (:script :src "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"))
-     ,@body
+     (:main
+       ,@body)
      (:script :type "module"
               :src "/script/app.js")))

@@ -47,10 +47,12 @@
         (:div
           (:div
             (:a :href "https://github.com/fwttnnn/sptfw"
+                :aria-label "project: spotify taste histogram"
                 :target "_blank"
                 :rel "noreferrer noopener"
                 (components/media/video:component "/media/videos/project/sptfw.webm"))
             (:a :href "https://kontinu.netlify.app/horse/vanilla"
+                :aria-label "project: infinite scroll library"
                 :target "_blank"
                 :rel "noreferrer noopener"
                 (components/media/video:component "/media/videos/project/kontinu.webm")))

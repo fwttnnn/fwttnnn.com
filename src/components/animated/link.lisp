@@ -7,6 +7,7 @@
     (when icon
       (:a :style "display: inline-flex; align-items: center; vertical-align: middle;"
           :href href
+          :aria-label (format nil "~a (duplicate)" text) ;; NOTE: for accessibilty
           :target "_blank"
           :rel "noreferrer noopener"
           (:img :src icon
